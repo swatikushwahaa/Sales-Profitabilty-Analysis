@@ -5,7 +5,7 @@
 -- TOOLS    : PostgreSQL · Star Schema (sales_fact, dim_products, dim_customers)
 -- =============================================================================
 -- BUSINESS PROBLEM:
---   Revenue is growing year over year — but profit margin is declining.
+--   Revenue is growing year over year but profit margin is declining.
 --   This file identifies exactly WHERE profit is being lost and WHY.
 -- =============================================================================
 
@@ -14,7 +14,7 @@
 -- Q1. HOW IS THE BUSINESS PERFORMING OVERALL?
 -- Metric   : Revenue, Profit, Orders, AOV, Profit Margin %
 -- Visual   : KPI Cards on Executive Dashboard
--- Finding  : Revenue is $6.89M but margin is only 12.47% — below target
+-- Finding  : Revenue is $6.89M but margin is only 12.47% below target 
 -- ─────────────────────────────────────────────────────────────────────────────
 
 SELECT
@@ -31,7 +31,7 @@ FROM sales_fact;
 -- Metric   : Year over Year revenue, profit, and margin trend
 -- Technique: LAG() window function
 -- Visual   : Combo chart on Executive Dashboard
--- Finding  : Revenue grew 128% (2014–2017) but margin fell from 14% to 11.6%
+-- Finding  : Revenue grew 128% (2014–2017) but margin fell from 13.43% to 12.74%
 -- ─────────────────────────────────────────────────────────────────────────────
 
 SELECT
@@ -55,9 +55,9 @@ ORDER BY order_year;
 -- ─────────────────────────────────────────────────────────────────────────────
 -- Q3. WHICH CATEGORY GENERATES THE MOST REVENUE BUT LEAST PROFIT?
 -- Metric   : Revenue, Profit, Margin % per Category
--- Technique: JOIN with dim_products
--- Visual   : Clustered bar chart — Revenue vs Profit by Category
--- Finding  : Furniture = $2.2M revenue but only 0.8% margin
+-- Technique: JOIN with dim_products..
+-- Visual   : Clustered bar chart, Revenue vs Profit by Category
+-- Finding  : Furniture = $2.2M revenue but only 2.49% margin
 -- ─────────────────────────────────────────────────────────────────────────────
 
 SELECT
@@ -126,7 +126,7 @@ ORDER BY discount_band;
 -- Q6. IS DISCOUNTING CONCENTRATED IN THE LEAST PROFITABLE CATEGORIES?
 -- Metric   : Profit Margin % per Category × Discount Band combination
 -- Technique: JOIN + CASE WHEN + GROUP BY two dimensions
--- Visual   : Matrix visual — rows = Category, columns = Discount Band
+-- Visual   : Matrix visual - rows = Category, columns = Discount Band
 -- Finding  : Furniture receives the highest discounts AND has the worst margin
 -- ─────────────────────────────────────────────────────────────────────────────
 
@@ -148,11 +148,11 @@ ORDER BY p.category, discount_band;
 
 
 -- ─────────────────────────────────────────────────────────────────────────────
--- Q7. WHICH REGION HAS THE LOWEST PROFIT MARGIN — AND WHY?
+-- Q7. WHICH REGION HAS THE LOWEST PROFIT MARGIN AND WHY?
 -- Metric   : Revenue, Profit, Margin %, Avg Discount per Region
 -- Technique: GROUP BY region, ORDER BY margin ascending
 -- Visual   : Region table on Profitability Deep Dive page
--- Finding  : South at 9.69% margin — driven by 15.67% avg discount rate
+-- Finding  : South at 9.69% margin - driven by 15.67% avg discount rate
 -- ─────────────────────────────────────────────────────────────────────────────
 
 SELECT
@@ -170,7 +170,7 @@ ORDER BY profit_margin_pct ASC;
 
 -- ─────────────────────────────────────────────────────────────────────────────
 -- Q8. WHICH PRODUCTS ARE ACTUALLY MAKING MONEY?
--- Metric   : Revenue, Profit, Margin % per Product — Top 10 by Profit
+-- Metric   : Revenue, Profit, Margin % per Product - Top 10 by Profit
 -- Technique: DENSE_RANK() OVER (PARTITION BY category ORDER BY profit DESC)
 -- Visual   : Top 10 Products by Profit bar chart
 -- Finding  : Canon Imageclass Copier leads with $63K profit at 42% margin
@@ -198,7 +198,7 @@ ORDER BY profit_rank;
 
 
 -- ─────────────────────────────────────────────────────────────────────────────
--- Q9. WHICH CUSTOMER SEGMENT IS MOST VALUABLE — VOLUME OR MARGIN?
+-- Q9. WHICH CUSTOMER SEGMENT IS MOST VALUABLE, VOLUME OR MARGIN?
 -- Metric   : Revenue, Profit, Margin %, Avg Discount per Segment
 -- Technique: GROUP BY segment
 -- Visual   : Revenue by Segment clustered bar
@@ -264,18 +264,18 @@ LIMIT 10;
 -- =============================================================================
 -- SUMMARY OF FINDINGS
 -- =============================================================================
--- Q1  : Business generates $6.89M revenue at 12.47% margin — below target
+-- Q1  : Business generates $6.89M revenue at 12.47% margin,  below target
 -- Q2  : Revenue grew 128% (2014–2017) but margin fell from 14% → 11.6%
--- Q3  : Furniture = $2.2M revenue, 0.8% margin — profit black hole
+-- Q3  : Furniture = $2.2M revenue, 0.8% margin, profit black hole
 -- Q4  : Tables and Bookcases are loss-making sub-categories
--- Q5  : Break-even is at 30% discount — 928 orders crossed this line
--- Q6  : Furniture receives highest discounts AND has worst margin — double hit
--- Q7  : South region at 9.69% margin — highest discount rate is the cause
+-- Q5  : Break-even is at 30% discount, 928 orders crossed this line
+-- Q6  : Furniture receives highest discounts AND has worst margin, double hit
+-- Q7  : South region at 9.69% margin, highest discount rate is the cause
 -- Q8  : Canon Imageclass Copier leads all products at $63K profit, 42% margin
 -- Q9  : Corporate segment has best margin. Consumer = volume, not value.
 -- Q10 : Top customers earn 47%+ margin at 0% discount. Frequency ≠ profit.
 -- =============================================================================
--- ROOT CAUSE : Heavy discounting — especially in Furniture and Q4 — is the
+-- ROOT CAUSE : Heavy discounting especially in Furniture and Q4 is the
 --              single biggest driver of margin erosion across all dimensions.
 -- RECOMMENDATION : Cap discounts at 20%. Orders above this level consistently
 --                  destroy profit across every category, region and segment.
