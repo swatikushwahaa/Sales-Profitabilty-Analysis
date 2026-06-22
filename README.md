@@ -66,7 +66,7 @@ The deep dive. Five charts that pinpoint the problem by category, sub-category, 
 | Q1 | How is the business performing overall? | $6.89M revenue · 12.47% margin · below 15% target |
 | Q2 | Is revenue growth translating into profit growth? | Revenue +128% but margin fell from 14.2% → 11.6% |
 | Q3 | Which category generates the most revenue but least profit? | Furniture $2.2M revenue, only $18K profit (0.8% margin) |
-| Q4 | Which sub-categories are actively losing money? | Tables −$53K · Bookcases −$10K · Supplies −$3.6K |
+| Q4 | Which sub-categories are actively losing money? | Tables -$53K · Bookcases -$10K · Supplies -$3.6K |
 | Q5 | At what discount level do we start losing money? | Above 30% discount every order at this level is a guaranteed loss |
 | Q6 | Is discounting concentrated in the worst categories? | Furniture gets the highest discounts and has the worst margin a double problem |
 | Q7 | Which region has the lowest margin, and why? | South at 9.7% driven by the highest average discount rate of 15.7% |
