@@ -1,0 +1,108 @@
+# sales-profitability-dashboard
+**Excel + PostgreSQL + Power BI | Kaggle Superstore Dataset**
+
+Analyzing $7M in revenue across 4 regions, 3 categories, 
+and 3 channels to find where the business makes money and where discounts are quietly destroying profit.
+
+# The Business Problem
+A retail company tracks $7M in revenue across Technology, Furniture, and Office Supplies. 
+The numbers look healthy. But underneath, three serious problems are hiding.
+
+The company has all three problems — and without a clear view of profitability by customer, category, region, and channel, leadership cannot tell which parts of the business are actually worth investing in.
+
+This dashboard makes profitability visible across customers, categories, regions, and channels.
+
+## Dashboard Preview
+
+
+
+
+## Key Business Insights
+
+**Insight 1 - Furniture category suffers from weak profitability**
+
+Furniture generates strong revenue contribution but delivers the lowest profit margin across all categories. Heavy discounting, significantly compresses profitability despite healthy sales volume.
+
+**Insight 2 - High discounting destroys profit margins**
+
+Orders discounted above 30% generate extremely low or even negative profit margins, indicating that aggressive discounting is driving revenue growth at the expense of profitability.
+
+**Insight 3 - South region underperforms due to excessive discounts**
+
+The South region records the lowest profit margin despite stable sales performance. Higher average discount rates compared to other regions are significantly reducing profitability.
+
+**Insight 4 - Office Supplies drives volume but weak order value**
+
+Office Supplies generates the highest order volume but maintains the lowest Average Order Value (AOV), indicating strong demand for lower-ticket products and frequent purchasing behavior.
+
+**Insight 5 — Revenue growth does not always translate into profitability**
+
+Several high-revenue categories and regions underperform in profit margin due to aggressive discounting strategies. This indicates that revenue alone is not a reliable indicator of business health.
+
+## Business Recommendations
+
+**1. Implement discount caps for Furniture products* * - Introduce category-level discount thresholds for Furniture products, especially within the Tables sub-category. Transactions exceeding predefined discount limits should require approval-based pricing controls. The company should also review product pricing and supplier costs for consistently low-margin SKUs.
+
+2. Set a hard cap on high-discount transactions** -  Implement a maximum allowable discount cap of 30% across all categories and customer segments. Any exception beyond this threshold should require managerial approval supported by volume justification or strategic customer value.
+
+3. 3. Optimize pricing and discount strategy in the South region - Gradually reduce average discount exposure in the South region and evaluate whether certain customer segments are receiving unnecessary pricing concessions. Regional pricing policies should be reviewed alongside:
+-customer profitability,
+-repeat purchase behavior,
+-and product mix performance.
+
+4. Increase Average Order Value in Office Supplies - Introduce product bundling, volume incentives, and cross-selling strategies to encourage customers to increase basket size.
+The company can also test:
+-minimum order thresholds,
+-combo offers,
+and premium Office Supplies bundles.
+
+5. Improve profitability in high-volume, low-margin segments -The business should prioritize customers, products, and regions that generate stronger profit contribution rather than focusing only on sales volume growth.
+Improving profit per order and increasing transaction value would strengthen overall business profitability without relying solely on acquiring additional customers or increasing sales volume.
+
+## SQL Approach
+
+Five structured SQL files covering:
+- Data validation and quality checks
+- Sales KPIs and time trend analysis  
+- Product and category profitability
+- Regional and customer analysis
+- Discount impact by bucket, region, and segment
+
+---
+
+## Dashboard Pages
+
+**Executive Overview**
+KPI cards, monthly trend, category and 
+region performance, discount impact, 
+segment breakdown — all on one page.
+
+---
+
+## Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| Total Revenue | $7M |
+| Total Profit | $859K |
+| Profit Margin | 12.47% |
+| Total Orders | 5,009 |
+| Worst Discount Bucket | 30%+ at -21.49% margin |
+| Best Category | Technology at 17.4% |
+
+---
+
+## How to Run
+
+1. Download `data/superstore_sales.csv`
+2. Create PostgreSQL database `ecommerce_project`
+3. Create `sales_fact` table and import CSV
+4. Run SQL files 01 through 05 in order
+5. Open Power BI → connect to PostgreSQL
+6. Refresh data
+
+---
+
+## Author
+**Swati Kushwaha**
+[LinkedIn](your link) | [GitHub](your link
