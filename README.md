@@ -118,7 +118,7 @@ Some customers place many orders but generate negative profit - because they con
 
 > Cap all discounts at 20%.
 
-Every order above this level loses money across every category, every region, and every customer segment. Replacing blanket Q4 discounts with value-adds like free shipping or product bundling would recover an estimated 2–3 margin points annually - worth roughly $138K–$207K in additional profit at current revenue levels.
+Every order above this level loses money across every category, every region, and every customer segment. Replacing blanket Q4 discounts with value-adds like free shipping or product bundling would recover an estimated 2-3 margin points annually worth roughly $138K-$207K in additional profit at current revenue levels.
 
 
 ## Project Structure
