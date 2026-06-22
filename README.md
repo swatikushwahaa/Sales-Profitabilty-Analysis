@@ -93,8 +93,8 @@ Some customers place many orders but generate negative profit - because they con
 
 ## SQL Techniques Used
 
-- Star schema design — `sales_fact` joined to `dim_products` and `dim_customers`
-- Window functions — `LAG()` for YoY growth, `SUM() OVER()` for running totals
+- Star schema design - `sales_fact` joined to `dim_products` and `dim_customers`
+- Window functions - `LAG()` for YoY growth, `SUM() OVER()` for running totals
 - `DENSE_RANK() OVER (PARTITION BY)` for top products per category
 - `CASE WHEN` bucketing for discount bands
 - `HAVING` clause to isolate loss-making sub-categories
