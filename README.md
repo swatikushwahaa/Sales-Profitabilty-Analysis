@@ -90,6 +90,15 @@ Below 30% discount - profitable. Above 30% - guaranteed loss. This is true acros
 Finding 4 - High order frequency does not equal high profit
 Some customers place many orders but generate negative profit - because they consistently receive high discounts. The top two customers earn 47% margin at zero discount. Loyalty and discount dependency are two very different things
 
+##Recommendations
+
+1. Tighten discount control across the business : Revenue growth should not come at the cost of falling margin. The company should review discounting more closely, track discount % against margin %, and reduce broad discounting that drives sales but weakens profitability.
+
+2. Focus on fixing Furniture profitability: Furniture should be treated as a priority category for margin improvement. Loss-making sub-categories such as Tables, Bookcases, and Supplies need pricing, discount, and product mix review before further sales growth is pushed.
+
+3. Introduce a discount guardrail below 30% : Since orders above 30% discount were consistently loss-making, the business should set a discount ceiling below this level and require review for any exceptions. This would reduce avoidable losses and improve pricing discipline.
+
+4. Evaluate customers based on profit, not just order count : Customer performance should be measured using profit contribution and discount dependency, not only order frequency. This would help the business identify which customers are truly valuable and where discounts are reducing profitability.
 
 ## SQL Techniques Used
 
