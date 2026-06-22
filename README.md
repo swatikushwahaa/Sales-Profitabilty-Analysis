@@ -6,7 +6,7 @@
 
 Between 2014 and 2017, the business grew revenue by 128%.
 
-At first, this looks like strong business growth. But when I looked deeper, I found that profit margin was falling every year — from 14.2% in 2014 to 11.6% in 2017.
+At first, this looks like strong business growth. But when I looked deeper, I found that profit margin was falling every year from 14.2% in 2014 to 11.6% in 2017.
 
 This means the company was making more sales, but not turning those sales into healthy profit.
 
@@ -37,7 +37,7 @@ This project answers these questions using SQL and Power BI.
 ### Two SQL Files
 
 **`01_data_preparation.sql`**
-Sets up the data model from scratch — fact table, two dimension tables, validation checks, profit margin calculation, and indexes for query performance.
+Sets up the data model from scratch - fact table, two dimension tables, validation checks, profit margin calculation, and indexes for query performance.
 
 **`ecommerce_profitability_analysis.sql`**
 10 business questions, each answered by one focused SQL query. Every query has a comment explaining what it measures, which SQL technique it uses, and what insight it surfaces.
@@ -47,10 +47,10 @@ Sets up the data model from scratch — fact table, two dimension tables, valida
 
 **Page 1 — Is the business growing profitably?**
 
-The executive view. Opens with 5 KPI cards showing revenue, profit, margin, orders, and average order value — each with a year-over-year % change so the trend is visible immediately.
+The executive view. Opens with 5 KPI cards showing revenue, profit, margin, orders, and average order value, each with a year-over-year % change so the trend is visible immediately.
 
 Three charts below answer the growth story:
-- A combo chart showing revenue climbing every year while the profit margin line quietly drops — the core tension of this entire project
+- A combo chart showing revenue climbing every year while the profit margin line quietly drops, the core tension of this entire project
 - A discount break-even chart showing exactly where orders start losing money (above 30% discount)
 - A monthly trend chart showing Q4 peaks in sales but collapses in margin every November and December
 
@@ -65,12 +65,12 @@ The deep dive. Five charts that pinpoint the problem by category, sub-category, 
 |---|---|---|
 | Q1 | How is the business performing overall? | $6.89M revenue · 12.47% margin · below 15% target |
 | Q2 | Is revenue growth translating into profit growth? | Revenue +128% but margin fell from 14.2% → 11.6% |
-| Q3 | Which category generates the most revenue but least profit? | Furniture — $2.2M revenue, only $18K profit (0.8% margin) |
+| Q3 | Which category generates the most revenue but least profit? | Furniture $2.2M revenue, only $18K profit (0.8% margin) |
 | Q4 | Which sub-categories are actively losing money? | Tables −$53K · Bookcases −$10K · Supplies −$3.6K |
-| Q5 | At what discount level do we start losing money? | Above 30% discount — every order at this level is a guaranteed loss |
-| Q6 | Is discounting concentrated in the worst categories? | Furniture gets the highest discounts and has the worst margin — a double problem |
-| Q7 | Which region has the lowest margin — and why? | South at 9.7% — driven by the highest average discount rate of 15.7% |
-| Q8 | Which products are actually making money? | Canon Imageclass Copier — $63K profit at 42% margin |
+| Q5 | At what discount level do we start losing money? | Above 30% discount every order at this level is a guaranteed loss |
+| Q6 | Is discounting concentrated in the worst categories? | Furniture gets the highest discounts and has the worst margin a double problem |
+| Q7 | Which region has the lowest margin, and why? | South at 9.7% driven by the highest average discount rate of 15.7% |
+| Q8 | Which products are actually making money? | Canon Imageclass Copier $63K profit at 42% margin |
 | Q9 | Which customer segment is most valuable? | Corporate earns 16% margin · Consumer has volume but only 11.5% margin |
 | Q10 | Who are our best and worst customers? | Top customers earn 47% margin at 0% discount · High orders ≠ high profit |
 
