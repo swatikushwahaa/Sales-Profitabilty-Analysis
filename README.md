@@ -45,7 +45,7 @@ Sets up the data model from scratch - fact table, two dimension tables, validati
 
 ### Two Dashboard Pages
 
-**Page 1 — Is the business growing profitably?**
+**Page 1 - Is the business growing profitably?**
 
 The executive view. Opens with 5 KPI cards showing revenue, profit, margin, orders, and average order value, each with a year-over-year % change so the trend is visible immediately.
 
@@ -54,7 +54,7 @@ Three charts below answer the growth story:
 - A discount break-even chart showing exactly where orders start losing money (above 30% discount)
 - A monthly trend chart showing Q4 peaks in sales but collapses in margin every November and December
 
-**Page 2 — Where exactly is profit being lost?**
+**Page 2 - Where exactly is profit being lost?**
 
 The deep dive. Five charts that pinpoint the problem by category, sub-category, segment, region, and customer.
 
