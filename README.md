@@ -2,7 +2,7 @@
 
 ### The business was growing revenue every year - but quietly losing profit margin. This project finds exactly where, why, and what to do about it.
 
-## The Problem
+## Business Problem
 
 Between 2014 and 2017, the business grew revenue by 128%.
 
@@ -120,15 +120,6 @@ Some customers place many orders but generate negative profit - because they con
 - `Revenue YoY Label` - formatted ▲/▼ arrow label for KPI cards
 - `YTD Revenue` and `YTD Profit` - using `TOTALYTD`
 - `Peak Month Labels` - conditional labels showing only peak months on the chart
-
----
-
-## The Recommendation
-
-> Cap all discounts at 20%.
-
-Every order above this level loses money across every category, every region, and every customer segment. Replacing blanket Q4 discounts with value-adds like free shipping or product bundling would recover an estimated 2-3 margin points annually worth roughly $138K-$207K in additional profit at current revenue levels.
-
 
 ## Project Structure
 
