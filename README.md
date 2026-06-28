@@ -59,24 +59,37 @@ Profitability Deepdive : Where exactly is profit being lost?
 The Profitability deep dive, charts that pinpoint the problem by category, sub-category, segment, region, and customer, discount.
 
 
-## The 10 Business Questions This Project Answers
+### The 10 Business Questions This Project Answers
 
-| # | Question | Key Finding |
-|---|---|---|
-| Q1 | How is the business performing overall? | $6.89M revenue · 12.47% margin · below 15% target |
-| Q2 | Is revenue growth translating into profit growth? | Revenue +128% but margin fell from 14.2% → 11.6% |
-| Q3 | Which category generates the most revenue but least profit? | Furniture $2.2M revenue, only $18K profit (0.8% margin) |
-| Q4 | Which sub-categories are actively losing money? | Tables -$53K · Bookcases -$10K · Supplies -$3.6K |
-| Q5 | At what discount level do we start losing money? | Above 30% discount every order at this level is a guaranteed loss |
-| Q6 | Is discounting concentrated in the worst categories? | Furniture gets the highest discounts and has the worst margin a double problem |
-| Q7 | Which region has the lowest margin, and why? | South at 9.7% driven by the highest average discount rate of 15.7% |
-| Q8 | Which products are actually making money? | Canon Imageclass Copier $63K profit at 42% margin |
-| Q9 | Which customer segment is most valuable? | Corporate earns 16% margin · Consumer has volume but only 11.5% margin |
-| Q10 | Who are our best and worst customers? | Top customers earn 47% margin at 0% discount · High orders ≠ high profit |
+| ### | Question | Key Finding |
+| Q1 | How is the business performing overall? |
+| Q2 | Is revenue growth translating into profit growth? |
+| Q3 | Which category generates the most revenue but least profit? |
+| Q4 | Which sub-categories are actively losing money? |
+| Q5 | At what discount level do we start losing money? |
+| Q6 | Is discounting concentrated in the worst categories? |
+| Q7 | Which region has the lowest margin, and why? |
+| Q8 | Which products are actually making money? |
+| Q9 | Which customer segment is most valuable? |
+| Q10 | Who are our best and worst customers? |
 
----
+**SUMMARY OF FINDINGS**
+Q1  : Business generates $6.89M revenue at 12.47% margin,  below target
+Q2  : Revenue grew 128% (2014–2017) but margin fell from 14% → 11.6%
+Q3  : Furniture = $2.2M revenue, 0.8% margin, profit black hole
+Q4  : Tables and Bookcases are loss-making sub-categories
+Q5  : Break-even is at 30% discount, 928 orders crossed this line
+Q6  : Furniture receives highest discounts AND has worst margin, double hit
+Q7  : South region at 9.69% margin, highest discount rate is the cause
+Q8  : Canon Imageclass Copier leads all products at $63K profit, 42% margin
+Q9  : Corporate segment has best margin. Consumer = volume, not value.
+Q10 : Top customers earn 47%+ margin at 0% discount. Frequency ≠ profit.
 
-## Key insights
+**ROOT CAUSE : Heavy discounting especially in Furniture and Q4 is the single biggest driver of margin decrease across all dimensions.**
+
+**RECOMMENDATION : Cap discounts at 20%. Orders above this level consistent destroy profit across every category, region and segment.**
+
+## KEY INSIGHTS
 
 1. Revenue growth did not lead to better profitability : Revenue grew every year. But so did the average discount rate. Margin fell every year as a direct result. The business looks healthy on the top line and is quietly bleeding on the bottom line.
 
@@ -86,7 +99,7 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 
 4. High order frequency does not equal high profit : Some customers place many orders but generate negative profit - because they consistently receive high discounts. The top two customers earn 47% margin at zero discount. Loyalty and discount dependency are two very different things
 
-## Business Recommendations
+## Key Recommendations
 
 1. Tighten discount control across the business : Revenue growth should not come at the cost of falling margin. The company should review discounting more closely, track discount % against margin %, and reduce broad discounting that drives sales but weakens profitability.
 
