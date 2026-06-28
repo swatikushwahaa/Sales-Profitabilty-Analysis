@@ -61,7 +61,8 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 
 ### The 10 Business Questions This Project Answers
 
-| ### | Question | Key Finding |
+| ### | Question |
+|-|-|
 | Q1 | How is the business performing overall? |
 | Q2 | Is revenue growth translating into profit growth? |
 | Q3 | Which category generates the most revenue but least profit? |
