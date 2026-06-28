@@ -1,6 +1,6 @@
 -- =============================================================================
 -- PROJECT  : E-Commerce Sales & Profitability Analysis
--- FILE     : ecommerce_profitability_analysis.sql
+-- FILE     : 02_ecommerce_profitability_analysis.sql
 -- PURPOSE  : Answer the 10 core business questions driving this project
 -- TOOLS    : PostgreSQL · Star Schema (sales_fact, dim_products, dim_customers)
 -- =============================================================================
