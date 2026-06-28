@@ -100,12 +100,13 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 ## Repository structure
 
 ```
-ecommerce-sales-profitability/
-├── sql/
+sales-profitability-analysis/
+├── Power BI/
+│   ├── Executive Profitability Overview.png
+│   └── Profitability Deepdive.png
+|   └── Screenshots.txt
+├── SQL files
 │   ├── 01_data_preparation.sql
-│   └── ecommerce_profitability_analysis.sql
-├── screenshots/
-│   ├── page1_executive_overview.png
-│   └── page2_profitability_deepdive.png
+│   └── 02_ecommerce_profitability_analysis.sql
 └── README.md
 ```
