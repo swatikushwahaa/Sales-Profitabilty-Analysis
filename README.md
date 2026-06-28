@@ -29,6 +29,7 @@ This project answers these questions using SQL and Power BI.
 | Power BI | Two-page interactive dashboard |
 | DAX | KPI measures, YoY growth, time intelligence |
 
+---
 
 ## Analysis
 
@@ -39,25 +40,6 @@ Sets up the data model from scratch - fact table, two dimension tables, validati
 
 **`ecommerce_profitability_analysis.sql`**
 10 business questions, each answered by one focused SQL query.
-
-### Dashboard Pages
-
-<img width="980" height="557" alt="Executive Profitability Overview" src="https://github.com/user-attachments/assets/9450ce0d-e151-4052-be94-ba7414885d65" />
-
-Executive Profitability Overview : Is the business growing profitably?
-
-Opens with 5 KPI cards showing revenue, profit, margin, orders, and average order value, each with a Month-over-Month % change so the trend is visible immediately.
-Three charts below answer the growth story:
-- A combo chart showing revenue climbing every year while the profit margin line quietly drops, the core tension of this entire project
-- A discount break-even chart showing exactly where orders start losing money (above 30% discount)
-- A monthly trend chart showing Q4 peaks in sales but collapses in margin every November and December
-
-<img width="971" height="551" alt="Profitability Deepdive" src="https://github.com/user-attachments/assets/eb6d2272-275a-4666-ac27-fbc35ddf1b52" />
-
-Profitability Deepdive : Where exactly is profit being lost?
-
-The Profitability deep dive, charts that pinpoint the problem by category, sub-category, segment, region, and customer, discount.
-
 
 ### The 10 Business Questions This Project Answers
 
@@ -79,6 +61,30 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 
 **RECOMMENDATION : Cap discounts at 20%. Orders above this level consistent destroy profit across every category, region and segment.**
 
+---
+
+## Dashboard Pages
+
+<img width="980" height="557" alt="Executive Profitability Overview" src="https://github.com/user-attachments/assets/9450ce0d-e151-4052-be94-ba7414885d65" />
+
+
+**Executive Profitability Overview : Is the business growing profitably?**
+
+Opens with 5 KPI cards showing revenue, profit, margin, orders, and average order value, each with a Month-over-Month % change so the trend is visible immediately.
+Three charts below answer the growth story:
+- A combo chart showing revenue climbing every year while the profit margin line quietly drops, the core tension of this entire project
+- A discount break-even chart showing exactly where orders start losing money (above 30% discount)
+- A monthly trend chart showing Q4 peaks in sales but collapses in margin every November and December
+
+<img width="971" height="551" alt="Profitability Deepdive" src="https://github.com/user-attachments/assets/eb6d2272-275a-4666-ac27-fbc35ddf1b52" />
+
+
+**Profitability Deepdive : Where exactly is profit being lost?**
+
+The Profitability deep dive, charts that pinpoint the problem by category, sub-category, segment, region, and customer, discount.
+
+---
+
 ## KEY INSIGHTS
 
 1. Revenue growth did not lead to better profitability : Revenue grew every year. But so did the average discount rate. Margin fell every year as a direct result. The business looks healthy on the top line and is quietly bleeding on the bottom line.
@@ -99,6 +105,7 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 
 4. Evaluate customers based on profit, not just order count : Customer performance should be measured using profit contribution and discount dependency, not only order frequency. This would help the business identify which customers are truly valuable and where discounts are reducing profitability.
 
+---
 
 ## Repository structure
 
