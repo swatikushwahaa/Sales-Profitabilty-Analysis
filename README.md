@@ -61,30 +61,19 @@ The Profitability deep dive, charts that pinpoint the problem by category, sub-c
 
 ### The 10 Business Questions This Project Answers
 
-| ### | Question |
-|-|-|
-| Q1 | How is the business performing overall? |
-| Q2 | Is revenue growth translating into profit growth? |
-| Q3 | Which category generates the most revenue but least profit? |
-| Q4 | Which sub-categories are actively losing money? |
-| Q5 | At what discount level do we start losing money? |
-| Q6 | Is discounting concentrated in the worst categories? |
-| Q7 | Which region has the lowest margin, and why? |
-| Q8 | Which products are actually making money? |
-| Q9 | Which customer segment is most valuable? |
-| Q10 | Who are our best and worst customers? |
+| | Question | Insight |
+|-|-|-|
+| Q1 | How is the business performing overall? | Business generates $6.89M revenue at 12.47% margin,  below target |
+| Q2 | Is revenue growth translating into profit growth? | Revenue grew 128% (2014–2017) but margin fell from 14% → 11.6% |
+| Q3 | Which category generates the most revenue but least profit? | Furniture = $2.2M revenue, 0.8% margin, profit black hole |
+| Q4 | Which sub-categories are actively losing money? | Tables and Bookcases are loss-making sub-categories | 
+| Q5 | At what discount level do we start losing money? | Break-even is at 30% discount, 928 orders crossed this line |
+| Q6 | Is discounting concentrated in the worst categories? | Break-even is at 30% discount, 928 orders crossed this line |
+| Q7 | Which region has the lowest margin, and why? | South region at 9.69% margin, highest discount rate is the cause |
+| Q8 | Which products are actually making money? | Canon Imageclass Copier leads all products at $63K profit, 42% margin |
+| Q9 | Which customer segment is most valuable? | Corporate segment has best margin. Consumer = volume, not value |
+| Q10 | Who are our best and worst customers? | Top customers earn 47%+ margin at 0% discount. Frequency ≠ profit |
 
-**SUMMARY OF FINDINGS**
-Q1  : Business generates $6.89M revenue at 12.47% margin,  below target
-Q2  : Revenue grew 128% (2014–2017) but margin fell from 14% → 11.6%
-Q3  : Furniture = $2.2M revenue, 0.8% margin, profit black hole
-Q4  : Tables and Bookcases are loss-making sub-categories
-Q5  : Break-even is at 30% discount, 928 orders crossed this line
-Q6  : Furniture receives highest discounts AND has worst margin, double hit
-Q7  : South region at 9.69% margin, highest discount rate is the cause
-Q8  : Canon Imageclass Copier leads all products at $63K profit, 42% margin
-Q9  : Corporate segment has best margin. Consumer = volume, not value.
-Q10 : Top customers earn 47%+ margin at 0% discount. Frequency ≠ profit.
 
 **ROOT CAUSE : Heavy discounting especially in Furniture and Q4 is the single biggest driver of margin decrease across all dimensions.**
 
